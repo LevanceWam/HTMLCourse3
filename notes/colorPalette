@@ -1,0 +1,15 @@
+This is the notes for color palette
+
+before we start building our components 
+we need to define our color palette 
+
+Color palettes often include a:
+    - Primary color
+    - secondary color
+    - accent color 
+
+We can have additional colors but it is important to identify these colors first 
+if we look at the photoshop markup of our site the design is centered around blue 
+
+so in our stylesheet we are going to 
+define our color palette using css variables 
