@@ -35,7 +35,7 @@ ruler tool:
     - we aren't going to use the exact values that we find for the width and 
     paddings but we are going to use relative values that are close enough or that gives us the same or better result 
 
-History Panel:
+history Panel:
     - Used for mistakes or reverting back to a certian point 
     - go to the window panel and click on history 
     in the window we can see all of the changes made in the document 
