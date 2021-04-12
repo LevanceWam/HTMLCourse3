@@ -1,0 +1,41 @@
+This is the notes for photoshop essential tools
+
+We are going to go over important tools to convert a design mark up to HTML and css
+
+Zoom tool:
+    - Shortcut Z used to zoom in when we click in a certian area 
+    - hold alt and click to zoom out 
+
+Dragging around the document:
+    - hold the space button and click and drag 
+
+guides:
+    - the little blue lines that helps us align items 
+    on the document 
+    - to turn them off go to the view tab and deselect extras
+    - shortcut cmd and H
+
+eyedropper tool:
+    - used to find the color of a item 
+    - shortcut is i
+    - when we click on the color this color will be selected on the color picker 
+
+type tool:
+    - shortcut is t 
+    - Important note that the font size is in points and in web design we do not want to use points 
+    - points are used in printing
+    - we can change this in the preferences units and rulers 
+    - to leave the text box hit the esc button
+
+Some tools have multiple tools to iterate over them hold shift and press the shortcut 
+or click on the tool and the list will show 
+
+ruler tool:
+    - Used to find the size of a item 
+    - we aren't going to use the exact values that we find for the width and 
+    paddings but we are going to use relative values that are close enough or that gives us the same or better result 
+
+History Panel:
+    - Used for mistakes or reverting back to a certian point 
+    - go to the window panel and click on history 
+    in the window we can see all of the changes made in the document 
