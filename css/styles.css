@@ -7,12 +7,12 @@
     --body-text-color: #918ca4;
 }
 
-html{
+/* * Typography */
+html {
     font-size: 62.5%;
 }
 
-/* * mobile approach */
-body{
+body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: var(--body-text-color);
     font-size: 2.4rem;
@@ -20,42 +20,74 @@ body{
     line-height: 1.5;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     color: var(--header-color);
     margin-bottom: 1rem;
 }
 
-h1{
+h1 {
     font-size: 7rem;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
-p{
+p {
     margin: 0;
 }
 
+/* * Desktop view */
 @media screen and (mid-width:1024px) {
-    body{
+    body {
         font-size: 1.8rem;
     }
 
-    h1{
+    h1 {
         font-size: 8rem;
     }
     
-    h2{
+    h2 {
         font-size: 4rem;
     }
     
-    h3{
+    h3 {
         font-size: 2.4rem;
+    }  
+}
+
+/* * Links */
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* * to create the arrow we use the content property to add it after */
+/* * if this didn't work we would have used a icon */
+.link-arrow::after{
+    content: '-->';
+    margin-left: 5px;
+    transition:margin-left ease-out 0.7s;
+}
+
+/* TODO: when we hover over the link we want the arrow to move to the right */
+/* * to target the arrow we need to put the after psuedo class after the :hover */
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
-    
 }
