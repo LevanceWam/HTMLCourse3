@@ -7,3 +7,55 @@
     --body-text-color: #918ca4;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+/* * mobile approach */
+body{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--body-text-color);
+    font-size: 2.4rem;
+    /* * remember that this is 1.5 * the font size since we are not using a measurement unit */
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    color: var(--header-color);
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+p{
+    margin: 0;
+}
+
+@media screen and (mid-width:1024px) {
+    body{
+        font-size: 1.8rem;
+    }
+
+    h1{
+        font-size: 8rem;
+    }
+    
+    h2{
+        font-size: 4rem;
+    }
+    
+    h3{
+        font-size: 2.4rem;
+    }
+    
+}
