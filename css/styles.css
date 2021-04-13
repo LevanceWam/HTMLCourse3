@@ -80,7 +80,7 @@ a {
     transition:margin-left ease-out 0.7s;
 }
 
-/* TODO: when we hover over the link we want the arrow to move to the right */
+/* TODO when we hover over the link we want the arrow to move to the right */
 /* * to target the arrow we need to put the after psuedo class after the :hover */
 .link-arrow:hover::after {
     margin-left: 10px;
@@ -89,5 +89,41 @@ a {
 @media screen and (min-width:1024px) {
     .link-arrow {
         font-size: 1.5rem;
+    }
+}
+
+/* TODO Build a badge component */
+/* * Badges */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: .5rem 2rem;
+    /* * This is going to stop the badge from wraping on to a new line */
+    white-space: nowrap;
+}
+
+/* * using BEM naming convention to define the skin  */
+.badge--primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+.badge--secondary{
+    background: var(--secondary-color);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
