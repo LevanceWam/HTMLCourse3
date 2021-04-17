@@ -137,16 +137,20 @@ a {
     color: var(--header-color);
 }
 
+/* * using the BEM naming convetion the child class gets the __ because it is apart of another component  */
 .list--inline .list__item{
+    /* * remember that we can apply margin to inline-block not inline */
     display: inline-block;
     margin-right: 2rem;
 }
 
 .list--tick {
+    /* * we have to add this padding to get the image to show  */
     padding-left: 3rem;
     list-style-image: url(../images/tick.svg);   
 }
 
+/* * to add space between the ticks and the items we have to nest right here because if we didn't it would apply this rule to every list__item class */
 .list--tick .list__item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
