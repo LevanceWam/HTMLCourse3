@@ -259,3 +259,26 @@ icon-container {
         font-size: 1.5rem;
     }
 }
+
+/* TODO working on the inputs*/
+/* * Inputs */
+
+.input {
+    padding:1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: 0;
+    color: var(--header-color);
+    font-size: 2rem;
+}
+
+/* * psuedo selector for placeholders */
+::placeholder {
+    color:#cdcbd7 ;
+}
+
+@media screen and (min-width: 1024px){
+    .input {
+        font-size: 1.5rem;
+    }
+}
