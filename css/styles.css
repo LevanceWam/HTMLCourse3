@@ -5,6 +5,7 @@
     --accent-color: #ff3400;
     --header-color: #1b0760;
     --body-text-color: #918ca4;
+    --border-color: #ccc;
 }
 
 *, *::after, *::before{
@@ -265,7 +266,7 @@ icon-container {
 
 .input {
     padding:1.5rem 3.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 30px;
     outline: 0;
     color: var(--header-color);
@@ -275,6 +276,11 @@ icon-container {
 /* * psuedo selector for placeholders */
 ::placeholder {
     color:#cdcbd7 ;
+}
+
+.input--group {
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
 }
 
 @media screen and (min-width: 1024px){
