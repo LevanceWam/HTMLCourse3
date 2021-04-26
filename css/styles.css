@@ -6,6 +6,7 @@
     --header-color: #1b0760;
     --body-text-color: #918ca4;
     --border-color: #ccc;
+    --border-radius: 30px;
 }
 
 *, *::after, *::before{
@@ -267,7 +268,7 @@ icon-container {
 .input {
     padding:1.5rem 3.5rem;
     border: 1px solid var(--border-color);
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     outline: 0;
     color: var(--header-color);
     font-size: 2rem;
@@ -280,7 +281,18 @@ icon-container {
 
 .input--group {
     border: 1px solid var(--border-color);
-    border-radius: 30px;
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input--group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input--group .btn{
+    margin: 4px;
 }
 
 @media screen and (min-width: 1024px){
