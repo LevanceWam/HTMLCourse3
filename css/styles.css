@@ -111,7 +111,7 @@ a {
 
 /* * using BEM naming convention to define the skin  */
 .badge--primary{
-    background: var(--primary-color);
+    background: #2b6ec7;
     color: white;
 }
 
@@ -240,7 +240,7 @@ icon-container {
 }
 
 .btn--outline {
-    background-color: none;
+    background-color: white;
     color: var(--header-color);
     border: 2px solid var(--header-color);
     transition: background ease-out 0.9s;
