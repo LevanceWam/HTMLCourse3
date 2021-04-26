@@ -285,8 +285,10 @@ icon-container {
     display: flex;
 }
 
+/* * using nesting to target this specific input field */
 .input--group .input {
     border: 0;
+    /* * this is going to make the input field grow to take up all of the available space in the div  */
     flex-grow: 1;
     padding: 1.5rem 1rem;
 }
