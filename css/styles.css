@@ -367,10 +367,12 @@ icon-container {
 }
 
 .plan--popular .card__header{
+    /* * in order to use absolute posiition the parent must be relative */
     position: relative;
 }
 
 .plan--popular .card__header::before {
+    /* * remeber that this is a inline element */
     content: url(../images/popular.svg);
     /* * this is an inline element so we have to change the display to give it a width */
     display: inline-block;
