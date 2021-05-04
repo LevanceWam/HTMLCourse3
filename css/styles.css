@@ -180,13 +180,24 @@ a {
     height: 40px;
 }
 
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 /* * primary icon color */
 .icon--primary {
     /* * the fill property only works on svg images this is how we change the color */
     fill: var(--primary-color); 
 }
 
-icon-container {
+.icon--white {
+    /* * the fill property only works on svg images this is how we change the color */
+    fill: #fff; 
+}
+
+
+.icon-container {
     background: #f3f9fa;
     width: 64px;
     height: 64px;
@@ -195,6 +206,10 @@ icon-container {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-container--accent {
+    background: var(--accent-color);
 }
 
 /* TODO Build buttons*/
@@ -422,6 +437,8 @@ icon-container {
 /* * quotes */
 
 .quote {
+    font-size: 3rem;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-style: italic;
     color: var(--body-text-color-darker);
     line-height: 1.3;
@@ -453,7 +470,7 @@ icon-container {
 
 .quote__line {
     position: relative;
-    top: 6px;
+    top: 8px;
 }
 
 @media screen and (mid-width: 1024px) {
@@ -485,5 +502,42 @@ icon-container {
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* testimonials */
+
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+/* * we are directly affecting the img element inside of the element with this class */
+/* * this is the direct child selector  */
+.testimonial__image > img {
+    width: 100%;
+}
+
+.testimonial .grid {
+    padding: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote,
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote {
+        margin-left: 6rem;
     }
 }
