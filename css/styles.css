@@ -269,6 +269,11 @@ a {
     color: #fff;
 }
 
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .btn--block{
     width: 100%;
     display: inline-block;
@@ -540,4 +545,32 @@ a {
     .testimonial .quote {
         margin-left: 6rem;
     }
+}
+
+/* callouts */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    /* * this is a property that we apply to a grid item this is going to fix it from streching */
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
 }
