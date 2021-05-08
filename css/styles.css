@@ -590,3 +590,40 @@ a {
         margin: 0 2rem;
     }
 }
+
+/* * collapsibles */
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__content {
+    /* * this is a trick we are using to animate the content of the collapsible so it looks like it is fading in and out */
+    /* * we are doing this because transition does not work with display */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    /* * here we are going to use the transition on all of the propperty */
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    /* * since we are using max-height here when we change the height of the content back from 0 it is going to take up all of the height of the current container */
+    max-height: 100vh;
+    opacity: 1;
+}
