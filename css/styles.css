@@ -634,7 +634,10 @@ a {
     --padding-vertical:6rem;
     /* * this is here just in case we decide to change this value in the future this affects the right skewed class */
     padding:var(--padding-vertical) 2rem;
-    border: 2px solid tomato;
+}
+
+.block__header {
+    text-align: center;
 }
 
 .block__heading {
@@ -660,4 +663,9 @@ a {
     /* * this is going to add 4 rems to what ever the value of the padding is */
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
