@@ -7,3 +7,4 @@ collapsibles.forEach((item)=>
         console.log('it works')
     })
 );
+// 
