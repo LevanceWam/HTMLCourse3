@@ -359,8 +359,17 @@ a {
     color: white;
 }
 
+.card--primary .plan__description {
+    opacity: 0.8;
+}
+
+.card--primary .badge--primary {
+    background: #126de4;
+    text-transform: uppercase;
+}
 .card--secondary .badge--secondary {
     background: #02cdf1;
+    text-transform: uppercase;
 }
 
 
@@ -801,4 +810,20 @@ a {
         /* * this is where the minmax function comes into help, this provides a range so if we have extra space it will be distributed equally */
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+/* * plans block */
+
+.block-plan {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.block-plan .card {
+    margin-right: 2rem;
+}
+
+.block-plan .card--primary {
+    position: relative;
+    z-index: 1;
 }
