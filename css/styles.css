@@ -224,11 +224,19 @@ a {
     font-size: 1.7rem;
     font-weight: 600;
     margin: 1rem 0;
-    outline: none;
+    outline: 0;
     padding: 2rem 3rem;
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    /* * this is going to align the icon to the middle of the button for us */
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -314,7 +322,7 @@ a {
     border: 0;
     /* * this is going to make the input field grow to take up all of the available space in the div  */
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input--group .btn{
@@ -764,4 +772,33 @@ a {
         align-self: center;
     }
     
+}
+
+/* * Domain block */
+
+.block-domain .input--group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .block-domain__prices {
+        /* * the autofit value the grid will try to fit as many columns as needed for all of the items */
+        /* * when using the autofit keyword we can not just use the fr unit it will not work */
+        /* * this is where the minmax function comes into help, this provides a range so if we have extra space it will be distributed equally */
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
 }
