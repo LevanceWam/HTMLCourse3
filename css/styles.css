@@ -816,7 +816,9 @@ a {
 
 .block-plan {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
+    
+
 }
 
 .block-plan .card {
@@ -826,4 +828,5 @@ a {
 .block-plan .card--primary {
     position: relative;
     z-index: 1;
+    bottom: 35px;
 }
