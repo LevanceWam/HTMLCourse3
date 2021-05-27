@@ -812,7 +812,7 @@ a {
     }
 }
 
-/* * plans block */
+/* * plan block */
 
 .block-plan {
     display: grid;
@@ -829,4 +829,8 @@ a {
     position: relative;
     z-index: 1;
     bottom: 35px;
+}
+
+.plan .card--secondary:hover {
+
 }
