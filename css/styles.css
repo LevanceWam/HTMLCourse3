@@ -814,6 +814,10 @@ a {
 
 /* * plan block */
 
+.plan {
+    transition: transform 0.8s ease-in;
+}
+
 .block-plan {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -822,7 +826,7 @@ a {
 }
 
 .block-plan .card {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .block-plan .card--primary {
@@ -832,5 +836,5 @@ a {
 }
 
 .plan:hover {
-background-color: goldenrod;
+transform: scale(1.1);
 }
