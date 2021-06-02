@@ -840,4 +840,9 @@ a {
     margin: 0 auto;
 }
 
+/* *features block */
 
+.block-feature .grid {  
+    margin: 4rem auto;
+    
+}
