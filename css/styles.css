@@ -75,9 +75,11 @@ a {
 
 .link-arrow {
     color: var(--accent-color);
+    display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 /* * to create the arrow we use the content property to add it after */
@@ -842,7 +844,26 @@ a {
 
 /* *features block */
 
+.feature {
+    gap: 4rem 3rem;
+    margin-bottom: 12rem;
+}
 
+.feature:first-of-type {
+    margin-top: 5rem;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__img {
+    width: 100%;
+}
 
 @media screen and (min-width:768px){
+    /* * this is how we can make the image and the content in each of the articles switch places if we wanted to go that approach */
+    /* .feature:nth-child(even) .feature__content {
+        order: 2;
+    } */
 }
