@@ -583,7 +583,7 @@ a {
     }
 }
 
-/* callouts */
+/* * callouts */
 
 .callout {
     padding: 4rem;
@@ -861,9 +861,12 @@ a {
     width: 100%;
 }
 
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){ */
     /* * this is how we can make the image and the content in each of the articles switch places if we wanted to go that approach */
     /* .feature:nth-child(even) .feature__content {
         order: 2;
     } */
-}
+/* } */
+
+
+/* * Showcase block  */
