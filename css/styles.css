@@ -685,7 +685,9 @@ a {
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
     color: #fff;
 }
 
@@ -871,3 +873,18 @@ a {
 
 /* * Showcase block  */
 
+.showcase__img {
+    width: 100%;
+}
+
+/* * this media query job is to not show the whole image pass the tablet point */
+/* * we want to only see a piece of the image  */
+/* * we do not want it to be responsive this is how we are going to do that */
+
+@media screen and (min-width:768px){
+    /* * first we need to get the image to appear its actual size */
+
+    /* * so here we are going to change the size of the columns of the grid so it isn't responsively reshaping itself */
+
+
+}
