@@ -883,6 +883,9 @@ a {
 
 @media screen and (min-width:768px){
     /* * first we need to get the image to appear its actual size */
+    .showcase__img {
+        width: auto;
+    }
 
     /* * so here we are going to change the size of the columns of the grid so it isn't responsively reshaping itself */
 
