@@ -14,15 +14,69 @@
 </head>
 
 <body>
-    <section class=" block block--dark block--skewed-right">
+    <section class=" block block--dark block--skewed-right showcase--block">
         <header class="block__header">
             <h2>User-friendly Control Panel</h2>
         </header>
-        <div class="container grid grid--1x2 showcase">
-            <img class="showcase__img" src="images/ipad.png">
+        <div class="container grid grid--1x2">
+            <!-- * we had to move the class to this element because this is the grid item and justify only works on grid items  -->
+            <picture class="showcase__img">
+                <source type="image/webp" srcset="images/ipad@1x.webp 1x, images/ipad@2x.webp 2x" />
+                <source type="image/png" srcset="images/ipad@1x.png 1x, images/ipad@2x.png 2x" />
+                <img src="images/ipad.png">
+            </picture>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta distinctio accusamus deleniti vel
-                ducimus sunt repudiandae. Deleniti, dicta. Odit.</p>
+            <ul class="list">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <!-- * this is the correct path that we need to enter to see the svg -->
+                                <use xlink:href="images/sprite.svg#snap"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy to start & manage updates</h3>
+                            <p>Our cloud plans include easy onboarding for new and existing sites and managed WordPress
+                                and WooCommerce
+                                auto-updates. </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <!-- * this is the correct path that we need to enter to see the svg -->
+                                <use xlink:href="images/sprite.svg#growth"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi aut sapiente laudantium
+                                eius velit repellat nesciunt neque nostrum dolorum fugiat. </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <!-- * this is the correct path that we need to enter to see the svg -->
+                                <use xlink:href="images/sprite.svg#wordpress"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Dynamic Caching & More</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores porro fugit repellat
+                                eum eligendi rem unde tempore iusto esse? </p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
 
         </div>
     </section>

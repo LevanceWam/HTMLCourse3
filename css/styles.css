@@ -15,6 +15,11 @@
 }
 
 /* * Typography */
+::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -43,6 +48,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 p {
@@ -146,7 +152,7 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--header-color);
+    
 }
 
 /* * using the BEM naming convetion the child class gets the __ because it is apart of another component  */
@@ -159,7 +165,8 @@ a {
 .list--tick {
     /* * we have to add this padding to get the image to show  */
     padding-left: 3rem;
-    list-style-image: url(../images/tick.svg);   
+    list-style-image: url(../images/tick.svg);
+    color: var(--header-color);   
 }
 
 /* * to add space between the ticks and the items we have to nest right here because if we didn't it would apply this rule to every list__item class */
@@ -461,6 +468,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 5rem;
 }
 
 .media__title {
@@ -694,13 +702,13 @@ a {
 .block--skewed-right {
     /* * this is going to add 4 rems to what ever the value of the padding is */
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
     /* * this is going to add 4 rems to what ever the value of the padding is */
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -775,10 +783,6 @@ a {
 }
 
 /* * hero */
-
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
     font-size: 2rem;
@@ -873,18 +877,34 @@ a {
 
 /* * Showcase block  */
 
-.showcase__img {
+.showcase__img > img {
     width: 100%;
 }
+
+/* * this was thinking in the right direction but we should try to put this on the .media selector because almost all majority of the time we are stacking media components on each other  */
+/* .showcase--block .media {
+    margin-bottom: 5rem;
+} */
 
 /* * this media query job is to not show the whole image pass the tablet point */
 /* * we want to only see a piece of the image  */
 /* * we do not want it to be responsive this is how we are going to do that */
 
 @media screen and (min-width:768px){
+
+    .showcase--block .grid {
+        grid-template-columns: 50% 50%;
+        gap: 0 2rem;
+    }
+
     /* * first we need to get the image to appear its actual size */
     .showcase__img {
+        justify-self: end;
+    }
+
+    .showcase__img > img {
         width: auto;
+        max-width: 700px;
     }
 
     /* * so here we are going to change the size of the columns of the grid so it isn't responsively reshaping itself */
