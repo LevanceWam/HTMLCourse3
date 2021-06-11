@@ -921,19 +921,44 @@ a {
     background: #232323;
 }
 
-.footer .list >li {
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+    font-weight: 600;
+}
+
+.footer__list > li {
     margin-bottom: 1.5rem;
 }
 
-.footer .list {
-    margin-top: .5rem;
+.footer__brand {
+    /* * this is one way to center the content  */
+    /* margin: 4rem auto; */
+    margin-top: 4rem;
+    text-align: center;
 }
 
-.footer .collapsible {
-    padding: 2rem;
-    border-bottom: 1px solid orange;
+.footer__copyright {
+    font-size: 2.1rem;
+    color: white;
+    opacity: .3;
 }
 
-.footer .collapsible__heading {
-    font-weight: 500;
+@media screen and (min-width:768px) {
+    .footer__sections {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .footer .collapsible__chevron {
+        display: none;
+    }
+    
+    .footer .collapsible__content {
+        display: contents;
+    }
+
+    
 }
