@@ -914,3 +914,26 @@ a {
 
 
 }
+
+/* * footer */
+
+.footer {
+    background: #232323;
+}
+
+.footer .list >li {
+    margin-bottom: 1.5rem;
+}
+
+.footer .list {
+    margin-top: .5rem;
+}
+
+.footer .collapsible {
+    padding: 2rem;
+    border-bottom: 1px solid orange;
+}
+
+.footer .collapsible__heading {
+    font-weight: 500;
+}
