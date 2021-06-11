@@ -921,9 +921,24 @@ a {
     background: #232323;
 }
 
+.footer a {
+    color: #777;
+    transition: color .3s linear;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
 .footer__section {
     padding: 2rem;
     border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+    /* * this is going to get rid of the space inbetween the header and the list this is set by default by the browser */
+    /* * to find this in the inspection look for margin-block-end */
+    margin: 0;
 }
 
 .footer__heading {
@@ -941,6 +956,12 @@ a {
     text-align: center;
 }
 
+.footer__brand img {
+    /* TODO consider refracting this and applying it to all images */
+    width: 100%;
+    max-width: 230px;
+}
+
 .footer__copyright {
     font-size: 2.1rem;
     color: white;
@@ -953,12 +974,32 @@ a {
     }
 
     .footer .collapsible__chevron {
+        /* * removing the chevron from the tablet view */
         display: none;
     }
     
     .footer .collapsible__content {
-        display: contents;
+        /* * this is one way to make the content visible  */
+        /* display: contents; */
+        opacity: 1;
+        max-height: 100%;
     }
 
-    
+    .footer__brand {
+        /* * this is going to move the section to the front */
+        order: -1;
+        margin-top: 1rem;
+    }
+
+    .footer__copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer__section {
+        border: 0;
+    }
+
+    .footer__heading {
+        font-size: 1.6rem;
+    }
 }
