@@ -419,9 +419,6 @@ a {
     margin-bottom: 3rem;
 }
 
-.plan--popular {
-    transform: scale(1.1);
-}
 
 .plan--popular .card__header{
     /* * in order to use absolute posiition the parent must be relative */
@@ -444,7 +441,7 @@ a {
 }
 
 .plan--popular:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 @media screen and (mid-width: 1024px) {
@@ -454,6 +451,13 @@ a {
 
     .plan__price {
         font-size: 5rem;
+    }
+
+    .plan--popular {
+        transform: scale(1.1);
+    }
+    .plan--popular:hover {
+        transform: scale(1.15);
     }
 
     .plan__billing-cycle {
