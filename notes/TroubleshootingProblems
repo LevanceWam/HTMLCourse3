@@ -1,0 +1,21 @@
+So far we have found a problem with the layout for the domain on the mobile side
+
+when ever we find issues like this we should try to isolate the issue 
+the better we do this the faster we can find the cause and fix it 
+
+so the best thing to do is to create a playground.html and
+get a basic template going and copy the stylesheet from the index 
+
+so this is where we are going to work in isolation from the index.html 
+so we are seperating the problem from the main site so we can work on it 
+
+the first thing that we notice is that all the other screens but mobile are working correctly 
+
+next we are going to want to delete other elements around the issue to see that if that is causing the problem
+
+after some investigating it seems to be a problem when we hit a certian breakpoint 
+the white box goes under the button 
+
+so this seems to be the problem the input box seems to be larger than its parent 
+this is happening because chrome gave a default width to .input-group .input 
+so our flex grow property can not do its job
