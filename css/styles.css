@@ -1008,4 +1008,8 @@ a {
     .footer__heading {
         font-size: 1.6rem;
     }
+
+    .footer__list {
+        font-size: 1.21rem;
+    }
 }
