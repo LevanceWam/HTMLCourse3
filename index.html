@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- * stylesheet for AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -166,7 +168,8 @@
         <!-- * using a article here because the feature component can stand on its own this is better to use semantically -->
         <!-- * this Article is being used to show off this standalone content -->
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <!-- ! this is how we use AOS -->
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <!-- * this is the correct path that we need to enter to see the svg -->
@@ -180,7 +183,7 @@
                 </p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-right">
                 <source type="image/webp" srcset="images/easy1x.webp 1x, images/easy2x.webp 2x">
                 <source type="image/png" srcset="images/easy1x.jpg 1x, images/easy2x.jpg 2x">
                 <img class="feature__img" src="images/easy2x.jpg" alt="">
@@ -188,12 +191,12 @@
         </article>
 
         <article class="grid grid--1x2 feature">
-            <picture>
+            <picture data-aos="flip-right">
                 <source type="image/webp" srcset="images/fast1x.webp 1x, images/fast2x.webp 2x">
                 <source type="image/png" srcset="images/fast1x.jpg 1x, images/fast2x.jpg 2x">
                 <img class="feature__img" src="images/fast2x.jpg" alt="">
             </picture>
-            <div class="feature__content">
+            <div class="feature__content" data-aos="flip-left">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <!-- * this is the correct path that we need to enter to see the svg -->
@@ -468,6 +471,11 @@
 
 
     <script src="js/main.js"></script>
+    <!-- * script for AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
