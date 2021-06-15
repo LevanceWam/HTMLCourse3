@@ -1,0 +1,78 @@
+Now we are going to get our site ready for production
+this is where we need to use a Build Tool
+
+##Build Tool
+Using a build tool we can combine multiple JS and CSS files
+we do this so we can reduce the number of HTTP request sent from the browser to the server
+
+we can also minify our CSS and JS files removing all the extra space and comments
+and unnessacry charaters this will help us deliver smaller files to the user 
+
+we can also optimize images 
+
+** Some popular tools:
+webpack (This is a little complicated lots of configuration)
+Rollup
+parcel
+
+we are going to look into parcel 
+https://parceljs.org/
+
+** Important Steps ** 
+first we need to install node if we do not have it
+
+the in vs code open terminal
+
+* npm init -y 
+* npm i -D parcel-bundler
+the captial d is for devdepency this is not going to be deployed with our project 
+
+* add .gitignore and add the node folder 
+
+## Using parcel to launch the site 
+
+now back in terminal 
+
+go to:
+
+node_modules/.bin/parcel (don't execute yet)
+
+this is where the the binary or executable files of the third party libraries 
+are installed
+
+then add the agrument index.html
+so it should look like this all together:
+
+node_modules/.bin/parcel index.html (do not execute)
+there is a way to make this shorter 
+
+first install parcel globally 
+
+sudo npm i -g parcel-bundler
+
+now we can call parcel from any folder and launch the site just like this 
+
+parcel index.html
+
+parcel comes with its own development server that is running on localhost:1234
+now the site is running on parcel server not live server 
+remember to use parcel's server we have to go into terminal and run that command 
+
+the server comes with live reloading so any changes that we make will show up immediately
+
+** adding more to the .gitignore
+
+parcel added 2 new folders that it need to build our site 
+we do not want this on our git repo
+
+add them to .gitignore
+
+## Build for production
+
+now we are going to stop the parcel server and start the build the site 
+crtl c to stop the server 
+
+then we are going to type the command:
+*  parcel build index.html
+
+I had to add a .htmlnanorc and some code to get the build to work 
