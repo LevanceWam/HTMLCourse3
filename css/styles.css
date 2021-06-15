@@ -1,3 +1,6 @@
+/* * using the import directive we are importing the normalize stylesheet into our stylesheet */
+@import "./normalize.css";
+
 :root {
     /* * defining the colors we are going to be using on the site */
     --primary-color: #2584ff;

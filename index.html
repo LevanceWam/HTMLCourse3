@@ -17,7 +17,6 @@
     <!-- * adding the inter google font  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- * stylesheet for AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,7 +26,7 @@
     <!-- * this is where our navigation is going to be put -->
     <header>
         <nav class="nav collapsible">
-            <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
+            <a aria-label="moshify" class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
             <svg class="icon icon--white nav__toggler">
                 <!-- * this is the correct path that we need to enter to see the svg -->
                 <use href="images/sprite.svg#menu"></use>
@@ -69,7 +68,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sint?</p>
         </header>
         <div class="input--group">
-            <input type="text" class="input" placeholder="Enter domain name here">
+            <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here">
             <!-- ! the button is falling out of the container  -->
             <!-- TODO: we need to fix the button on mobile screens so this problem does not continue to exist -->
             <button class="btn btn--accent">
