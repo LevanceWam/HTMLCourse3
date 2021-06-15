@@ -1,0 +1,15 @@
+#Deployment:
+
+Now we are going to deploy the website 
+to do this we are going to use a service called: netlify https://www.netlify.com/
+
+so create a account and we go from there 
+
+1. click the sites tab and click the new site from git
+2. second click the git supporter that suits you (for us it is github)
+3. select the repo you want to use 
+4. look over the next page settings to see if it is correct 
+5. next set the build settings which are 
+    * parcel build index.html
+    * for the publish directory we are going to use dist 
+6. Deploy site
