@@ -18,3 +18,5 @@ so create a account and we go from there
 I had to update to parcel 1.12.5 because on netlify
 i kept recieving a error and after doing some research 
 either downgrading or updating will fix the issue 
+
+Site is live on hostingsite.netlify.app
